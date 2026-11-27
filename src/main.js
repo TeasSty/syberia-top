@@ -5,9 +5,14 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
 function initChrome() {
   const mark = document.querySelector("[data-chrome]");
   if (!mark) return;
-  requestAnimationFrame(() => {
-    mark.classList.add("is-in");
-  });
+  const reveal = () => mark.classList.add("is-in");
+  const logo = mark.querySelector("img");
+  if (logo && !logo.complete) {
+    logo.addEventListener("load", () => requestAnimationFrame(reveal), { once: true });
+    logo.addEventListener("error", () => requestAnimationFrame(reveal), { once: true });
+    return;
+  }
+  requestAnimationFrame(reveal);
 }
 
 function initDrift() {
