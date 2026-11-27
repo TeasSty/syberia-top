@@ -2,6 +2,9 @@
 
 Лендинг туристического клуба: эстетик-туры и походы по Сибири.
 
+- Сайт: https://teassty.github.io/syberia-top/
+- Репозиторий: https://github.com/TeasSty/syberia-top
+
 ## Запуск
 
 ```bash
