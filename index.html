@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ST • Сибирия Топ — эстетик-туры, походы в горы</title>
+    <meta
+      name="description"
+      content="Авторские эстетик-туры по Сибири: маршруты, travel-съёмка, кухня на тропе. Клуб ST • Сибирия Топ, Иркутск."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">К содержанию</a>
+
+    <header class="nav">
+      <a class="nav__brand" href="#top" aria-label="ST Сибирия Топ — наверх">
+        <span class="nav__mark" aria-hidden="true">ST</span>
+        <span class="nav__name">Сибирия Топ</span>
+      </a>
+      <nav class="nav__links" aria-label="Основное">
+        <a href="#routes">Маршруты</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#crew">Команда</a>
+        <a href="#book">Заявка</a>
+      </nav>
+      <a class="nav__cta" href="#book">Ближайший выезд</a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-label="Главный экран">
+        <div class="hero__media" data-drift>
+          <img
+            src="/images/hero-tent.jpg"
+            alt="Вид из палатки на сибирский хребет на закате"
+            width="2400"
+            height="1600"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero__veil" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="hero__club">туристический клуб · Иркутск</p>
+          <h1 class="chrome-mark" data-chrome>
+            <span>SYBERIA</span>
+            <span>TOP</span>
+          </h1>
+          <p class="hero__line">эстетик-туры по Сибири</p>
+          <a class="btn btn--ghost" href="#routes">Смотреть маршруты</a>
+        </div>
+      </section>
+
+      <section class="plate plate--clay" id="routes" aria-labelledby="routes-title">
+        <div class="plate__grid">
+          <figure class="plate__photo">
+            <img
+              src="/images/route-altai.jpg"
+              alt="Группа на тропе у горного озера"
+              width="1600"
+              height="1066"
+              loading="lazy"
+            />
+          </figure>
+          <div class="plate__copy">
+            <p class="eyebrow">Ближайшие выезды</p>
+            <h2 id="routes-title">Маршруты</h2>
+            <article class="trip">
+              <h3>Алтай · 8 дней</h3>
+              <p>Авторский маршрут с профессиональной travel-съёмкой и кухней на тропе.</p>
+              <a class="text-link" href="#book">Программа и даты</a>
+            </article>
+            <article class="trip trip--next">
+              <h3>Байкал · 5 дней</h3>
+              <p>Эстетик-выходные у озера: лёгкий трек, кадры на золотом часу, общая кухня.</p>
+              <a class="text-link" href="#book">Программа и даты</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="plate__grid plate__grid--flip">
+          <figure class="plate__photo">
+            <img
+              src="/images/route-baikal.jpg"
+              alt="Снежный хребет над сибирским озером"
+              width="1600"
+              height="1066"
+              loading="lazy"
+            />
+          </figure>
+          <div class="plate__copy">
+            <p class="eyebrow">Как устроен выезд</p>
+            <h2>Один маршрут — три слоя</h2>
+            <ol class="layers">
+              <li>
+                <span>01</span>
+                <div>
+                  <strong>Тропа</strong>
+                  <p>Авторский путь: виды, ночёвки, темп под группу.</p>
+                </div>
+              </li>
+              <li>
+                <span>02</span>
+                <div>
+                  <strong>Кадр</strong>
+                  <p>Travel-съёмка в пути — не постановка, а живой свет места.</p>
+                </div>
+              </li>
+              <li>
+                <span>03</span>
+                <div>
+                  <strong>Стол</strong>
+                  <p>Фирменная кухня на маршруте, не «сухпай ради галочки».</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+        <div class="gallery__head">
+          <p class="eyebrow">С прошлых выездов</p>
+          <h2 id="gallery-title">Галерея</h2>
+        </div>
+        <div class="gallery__strip" role="list">
+          <figure role="listitem">
+            <img src="/images/gallery-1.jpg" alt="Хребет в холодном свете" loading="lazy" width="1200" height="800" />
+          </figure>
+          <figure role="listitem">
+            <img src="/images/gallery-2.jpg" alt="Лагерь на закате" loading="lazy" width="1200" height="800" />
+          </figure>
+          <figure role="listitem">
+            <img src="/images/gallery-3.jpg" alt="Треккинг по гребню" loading="lazy" width="1200" height="800" />
+          </figure>
+          <figure role="listitem">
+            <img src="/images/gallery-4.jpg" alt="Кухня у костра" loading="lazy" width="1200" height="800" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="crew" id="crew" aria-labelledby="crew-title">
+        <div class="crew__media">
+          <img
+            src="/images/team.jpg"
+            alt="Инструкторы на маршруте"
+            width="1400"
+            height="933"
+            loading="lazy"
+          />
+        </div>
+        <div class="crew__copy">
+          <p class="eyebrow">Клуб</p>
+          <h2 id="crew-title">Команда</h2>
+          <p>
+            Екатерина Даар — outdoor-эксперт и основатель. Катя Топ — координатор маршрутов Сибири.
+            Ведём небольшие группы: безопасно, вкусно, с кадром.
+          </p>
+          <ul class="crew__list">
+            <li>Екатерина Даар — основатель</li>
+            <li>Катя Топ — маршруты Сибири</li>
+          </ul>
+          <a class="text-link" href="https://vk.ru/syberia_top" rel="noopener noreferrer" target="_blank"
+            >VK-клуб</a
+          >
+        </div>
+      </section>
+
+      <section class="gear" id="gear" aria-labelledby="gear-title">
+        <div class="gear__inner">
+          <p class="eyebrow">Если своего нет</p>
+          <h2 id="gear-title">Прокат снаряжения</h2>
+          <p>Палатки, коврики, рюкзаки и базовый набор — подскажем, что взять с собой, а что взять у нас.</p>
+          <a class="btn btn--solid" href="#book">Уточнить по выезду</a>
+        </div>
+      </section>
+
+      <section class="book" id="book" aria-labelledby="book-title">
+        <div class="book__intro">
+          <p class="eyebrow">Заявка</p>
+          <h2 id="book-title">Записаться на выезд</h2>
+          <p>Оставьте контакты — подберём маршрут и пришлём программу, даты и условия.</p>
+          <p class="book__contacts">
+            <a href="tel:+79994200444">+7 (999) 420-04-44</a>
+            <a href="mailto:syberia.top@bk.ru">syberia.top@bk.ru</a>
+          </p>
+        </div>
+        <form class="form" id="booking-form">
+          <label>
+            Имя
+            <input name="name" type="text" autocomplete="name" required maxlength="80" aria-describedby="form-status" />
+          </label>
+          <label>
+            Телефон или Telegram
+            <input name="contact" type="text" autocomplete="tel" required maxlength="80" aria-describedby="form-status" />
+          </label>
+          <label>
+            Интересующий маршрут
+            <select name="route">
+              <option value="altai">Алтай · 8 дней</option>
+              <option value="baikal">Байкал · 5 дней</option>
+              <option value="other">Подскажите, что подойдёт</option>
+            </select>
+          </label>
+          <label>
+            Комментарий
+            <textarea name="note" rows="3" maxlength="500" placeholder="Опыт походов, даты, вопросы"></textarea>
+          </label>
+          <button class="btn btn--solid" type="submit">Отправить заявку</button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p class="chrome-mark chrome-mark--sm">ST</p>
+        <p>Сибирия Топ · эстетик-туры, походы в горы</p>
+      </div>
+      <div>
+        <p>ул. Литвинова 20, стр. 10, Иркутск</p>
+        <p>
+          <a href="https://vk.ru/syberia_top" rel="noopener noreferrer" target="_blank">vk.ru/syberia_top</a>
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
